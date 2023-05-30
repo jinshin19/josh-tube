@@ -1,0 +1,270 @@
+/* 
+  - 1280 x 800 LANDSCAPE MODE;
+  - Kindle Fire HDX
+*/
+@media screen and (max-width: 1280px) {
+
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 23%;
+  }
+  
+}
+
+/* 
+  - 1138 x 712 LANDSCAPE MODE;
+  - Galaxy Tab S4
+*/
+@media screen and (max-width: 1138px) {
+
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 26%;
+  }
+  
+}
+
+/* 
+  - 1024 x 600;
+  - BlackBerry Playbook
+*/
+@media screen and (max-width: 1024px) {
+
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 30%;
+  }
+  
+}
+
+/* 
+  - 800 x 1280;
+  - Kindle Fire HDX
+*/
+@media screen and (max-width: 800px) {
+  
+  .wrapper .videos-container .content-wrapper{
+    width: 38%;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 80%;
+    height: 385px;
+  }
+
+}
+
+/* 
+ - 740 x 360 LANDSCAPE MODE;
+ - Galaxy S8;
+*/
+@media screen and (max-width: 740px) {
+  
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 40%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: 10px;
+    top: 20px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 80%;
+    height: 90%;
+  }
+
+}
+
+/* 
+ - 712 x 1138;
+ - Galaxy Tab S4;
+*/
+@media screen and (max-width: 712px) {
+  
+  .wrapper .videos-container .content-wrapper{
+    width: 44%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 50px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 80%;
+    height: 385px;
+  }
+
+}
+
+/* 
+ - 658 x 320 LANDSCAPE MODE;
+ - Galaxy S9+;
+*/
+@media screen and (max-width: 658px) {
+  
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 45%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: 10px;
+    top: 20px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 80%;
+    height: 90%;
+  }
+
+}
+
+/* 
+ - 640 x 360 LANDSCAPE MODE;
+ - BlackBerry;
+*/
+@media screen and (max-width: 640px) {
+  
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 45%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: 10px;
+    top: 20px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 80%;
+    height: 90%;
+  }
+
+}
+
+/* 
+  - 600 x 1024;
+  - BlackBerry Playbook
+*/
+@media screen and (max-width: 600px) {
+
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 80%;
+    height: 385px;
+  }
+
+}
+
+/* 
+  - 360 x 640px;
+  - BlackBerry Z30,
+  - Galaxy Note 3,
+  - Galaxy Note II,
+  - Galaxy S III
+  - Galaxy S8 360 x 740
+*/
+@media screen and (max-width: 360px) {
+  
+  .wrapper .header nav {
+    padding: 2em 3em;
+  }
+  .wrapper .header .search-wrapper {
+    padding: 0 1em;
+  }
+  .wrapper .header .search-wrapper input {
+    width: 90%;
+  }
+  .wrapper .header .search-wrapper button {
+    padding: 1em;
+  }
+  .wrapper .header {
+    margin-bottom: 2em;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 80%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 50px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 95%;
+    height: 385px;
+  }
+
+}
+
+/* 
+  - 320;
+  - Galaxy S9+ 320 x 658
+*/
+@media screen and (max-width: 320px) {
+  
+  .wrapper .header nav {
+    padding: 2em;
+  }
+  .wrapper .header .search-wrapper {
+    padding: 0 1em;
+  }
+  .wrapper .header .search-wrapper input {
+    width: 90%;
+  }
+  .wrapper .header .search-wrapper button {
+    padding: 1em;
+  }
+  .wrapper .header {
+    margin-bottom: 2em;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 90%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 50px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 95%;
+    height: 300px;
+  }
+
+}
