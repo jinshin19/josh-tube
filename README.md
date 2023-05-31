@@ -3,11 +3,6 @@
 - Is a youtube data api v3.
 - Basic search query functionality from youtube api.
 
-# Today
-- The API has not yet implemented.
-- For now this is still under construction.
-
-# Added:
 # Responsiveness:
  - Nest Hub Max 1280 x 800.
  - Nest Hub 1024 x 600.
