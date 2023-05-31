@@ -1,6 +1,7 @@
 /* 
   - 1280 x 800 LANDSCAPE MODE;
   - Kindle Fire HDX
+  - Nest Hub Max 1280 x 800 landscape
 */
 @media screen and (max-width: 1280px) {
 
@@ -37,6 +38,8 @@
 /* 
   - 1024 x 600;
   - BlackBerry Playbook
+  - Nest Hub 1024 x 600 landscape
+  - Ipad Pro
 */
 @media screen and (max-width: 1024px) {
 
@@ -53,8 +56,46 @@
 }
 
 /* 
+  - 912 x 1368
+  - Surface Pro 7
+*/
+
+/* 
+  - 896 x 414 LANDSCAPE MODE;
+  - iPhone XR ISSUE
+*/
+
+/* 
+  - 854 x 480 LANDSCAPE MODE;
+  - Nokia N9
+*/
+@media screen and (max-width: 854px) {
+
+  .wrapper .videos-container {
+    height: 100vh;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 33%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: 10px;
+    top: 20px;
+  }
+
+}
+
+/* 
+  - 820 x 1180
+  - Ipad Air
+*/
+
+/* 
   - 800 x 1280;
   - Kindle Fire HDX
+  - Nexus 10
 */
 @media screen and (max-width: 800px) {
   
@@ -67,6 +108,12 @@
   }
 
 }
+
+/* 
+  - 768 x 1024
+  - Ipad Mini
+  - Ipad
+*/
 
 /* 
  - 740 x 360 LANDSCAPE MODE;
@@ -143,6 +190,7 @@
 /* 
  - 640 x 360 LANDSCAPE MODE;
  - BlackBerry;
+ - Microsoft Lumia 550
 */
 @media screen and (max-width: 640px) {
   
@@ -169,6 +217,7 @@
 /* 
   - 600 x 1024;
   - BlackBerry Playbook
+  - Nexus 7 600 x 960
 */
 @media screen and (max-width: 600px) {
 
@@ -186,12 +235,189 @@
 }
 
 /* 
+  - 540 x 720
+  - Surface Duo
+*/
+
+/* 
+  - 533 x 320 LANDSCAPE MODE;
+  - Nokia Lumia 520
+*/
+@media screen and (max-width: 533px) {
+  
+  .wrapper .videos-container .content-wrapper{
+    width: 55%;
+  }
+
+}
+
+/* 
+  - 480 x 854;
+  - Nokia N9
+*/
+@media screen and (max-width: 480px) {
+
+  .wrapper .header nav {
+    padding: 2em 3em;
+  }
+  .wrapper .header .search-wrapper {
+    padding: 0 2em;
+  }
+  .wrapper .header .search-wrapper input {
+    width: 90%;
+  }
+  .wrapper .header .search-wrapper button {
+    padding: 1em;
+  }
+  .wrapper .header {
+    margin-bottom: 2em;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 65%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 20px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 95%;
+    height: 385px;
+  }
+
+}
+
+/* 
+  - 414 x 896;
+  - iPhone XR
+*/
+
+/* 
+  - 412 x 732;
+  - Nexus 5X
+  - Nexus 6
+  - Nexus 6P
+  - Samsung Galaxy S20 Ultra 412 x 915
+  - Samsung Galaxy A51/71 412 x 914
+*/
+@media screen and (max-width: 412px) {
+
+  .wrapper .header nav {
+    padding: 2em 3em;
+  }
+  .wrapper .header .search-wrapper {
+    padding: 0 2em;
+  }
+  .wrapper .header .search-wrapper input {
+    width: 90%;
+  }
+  .wrapper .header .search-wrapper button {
+    padding: 1em;
+  }
+  .wrapper .header {
+    margin-bottom: 2em;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 75%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 50px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 95%;
+    height: 385px;
+  }
+
+}
+
+/* 
+  - 411 x 731;
+  - Pixel 2
+  - Pixel 2 XL
+*/
+
+/* 
+  - 393 x 786;
+  - Pixel 3
+  - Pixel 3 XL
+  - Pixel 5 393 x 851
+*/
+
+/* 
+  - 390 x 844;
+  - iPhone 12 Pro
+*/
+
+/* 
+  - 384 x 640;
+  - LG Optimus L70,
+  - Nexus 4
+*/
+@media screen and (max-width: 384px) {
+
+  .wrapper .header nav {
+    padding: 2em 3em;
+  }
+  .wrapper .header .search-wrapper {
+    padding: 0 1em;
+  }
+  .wrapper .header .search-wrapper input {
+    width: 90%;
+  }
+  .wrapper .header .search-wrapper button {
+    padding: 1em;
+  }
+  .wrapper .header {
+    margin-bottom: 2em;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 80%;
+  }
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 50px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 95%;
+    height: 385px;
+  }
+
+}
+
+/* 
+  - 375 x 667;
+  - iPhone SE
+  - iPhone 6/7/8
+  - iPhone X
+*/
+
+/* 
   - 360 x 640px;
   - BlackBerry Z30,
   - Galaxy Note 3,
   - Galaxy Note II,
   - Galaxy S III
   - Galaxy S8 360 x 740
+  - Microsoft Lumia 950
+  - Moto G4
+  - Nexus 5
+  - Galaxy S8+ 360 x 740
+  - Galaxy S5
 */
 @media screen and (max-width: 360px) {
   
@@ -230,8 +456,16 @@
 }
 
 /* 
+  - 353 x 745;
+  - Pixel 4
+*/
+
+/* 
   - 320;
-  - Galaxy S9+ 320 x 658
+  - Galaxy S9+ 320 x 658,
+  - Nokia Lumia 520 320 x 533
+  - iPhone 4 320 x 480;
+  - iPhone 5/SE 320 x 568;
 */
 @media screen and (max-width: 320px) {
   
@@ -265,6 +499,151 @@
   .wrapper .video-player-wrapper .video {
     width: 95%;
     height: 300px;
+  }
+
+}
+
+/* 
+  - 280 x 653
+  - Galaxy Fold
+*/
+
+/* 
+  - 240 x 320;
+  - JioPhone 2
+*/
+@media screen and (max-width: 240px) {
+  
+  .wrapper .header nav {
+    padding: 1em;
+    margin-bottom: 10px;
+  }
+  .wrapper .header .search-wrapper {
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper .header .search-wrapper input {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .wrapper .header .search-wrapper button {
+    padding: 1em;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .wrapper .header {
+    margin-bottom: 2em;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .wrapper .videos-container .content-wrapper{
+    width: 90%;
+    height: 215px;
+  }
+  .wrapper .videos-container .content-wrapper h1 {
+    font-size: large;
+  }
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    font-size: x-large;
+  }
+
+  .wrapper footer {
+    text-align: center;
+  }
+
+}
+
+/* Max Heights *************/
+
+/* 
+  - 480 x 320 PORTRAIT MODE;
+  - iPhone 4;
+*/
+@media screen and (max-height: 480px) {
+  .wrapper .video-player-wrapper button {
+    right: auto;
+    top: 15px;
+  }
+}
+
+/* 
+ - 736 x 414 LANDSCAPE MODE;
+ - iPhone 6/7/8
+*/
+@media screen and (max-height: 414px) {
+  .wrapper .video-player-wrapper button {
+    right: 15px;
+    top: 15px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 75%;
+    height: 270px;
+  }
+}
+
+/* 
+ - 732 x 412 LANDSCAPE MODE;
+ - Nexus 5X
+*/
+@media screen and (max-height: 412px) {
+  .wrapper .video-player-wrapper button {
+    right: 15px;
+    top: 15px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 75%;
+    height: 250px;
+  }
+}
+
+/* 
+  - 480 x 320 LANDSCAPE MODE;
+  - iPhone 4;
+*/
+@media screen and (max-height: 320px) {
+  .wrapper .video-player-wrapper button {
+    right: 10px;
+    top: 15px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 75%;
+    height: 250px;
+  }
+}
+
+/* 
+  - 320 x 240 LANDSCAPE MODE;
+  - JioPhone 2;
+*/
+@media screen and (max-height: 240px) {
+
+  .wrapper .videos-container {
+    height: auto;
+  }
+  .wrapper .videos-container.contents {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .wrapper .video-player-wrapper button {
+    right: 10px;
+    top: 15px;
+    font-size: x-large;
+    width: 30px;
+    height: 30px;
+  }
+  .wrapper .video-player-wrapper .video {
+    width: 75%;
+    height: 150px;
   }
 
 }
