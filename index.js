@@ -31,10 +31,10 @@ window.onload = e => {
 }
 
 // Regular Funcions
-function videoData () {
+function videoData (value) {
 
   _video.innerHTML += `
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/flSvRm_MvjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${value}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   `;
 
 }
@@ -47,91 +47,37 @@ function clearResults () {
 
 function getResults (arg) {
 
+  searchInputValue.value = '';
+
   let url = END_POINT + SNIPPET + VIDEO_TYPE + 'q=' + arg + '&' + MAX_RESULT + API_KEY;
 
-  videosContainer.innerHTML += `
+  fetch(url).then(data => {
 
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
+    return data.json();
 
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
+  }).then(data => {
 
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
+    
+    let datas = data.items;
+    
+    datas.forEach(data => {
 
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
+      videosContainer.innerHTML += `
+  
+      <button class="content-wrapper" type="button">
+        <input type="hidden" value="${data.id.videoId}">
+        <img src="${data.snippet.thumbnails.medium.url}" alt="">
+        <hr>
+        <h1>${data.snippet.title}</h1>
+        <div class="label">
+          <h3>${data.snippet.channelTitle}</h3>
+          <p>${data.snippet.publishTime}</p>
+        </div>
+      </button>`;
 
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
+    })
 
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
-
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
-
-    <button class="content-wrapper" type="button">
-      <img src="hq720.jpg" alt="">
-      <hr>
-      <h1> Parokya ni edgar  </h1>
-      <div class="label">
-        <h3>Mr Lofi</h3>
-        <p> 8 weeks ago</p>
-      </div>
-    </button>
-
-  `;
+  })
 
   searchButton.disabled = false;
 
@@ -148,7 +94,9 @@ function getResults (arg) {
 
         videoPlayerWrapper.onanimationend = e => {
 
-          videoData();
+          console.log(data.querySelector('input'))
+
+          videoData(data.querySelector('input').value);
 
         }
 
@@ -158,7 +106,7 @@ function getResults (arg) {
 
     })
 
-  }, 200)
+  }, 1500)
 
 }
 
@@ -236,7 +184,6 @@ searchButton.onclick = e => {
       getResults(searchInputValue.value);
   
     }
-
 
   }
 
