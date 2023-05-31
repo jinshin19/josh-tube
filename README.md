@@ -2,7 +2,7 @@
 
 - Is a youtube data api v3.
 - Basic search query functionality from youtube api.
-- This is the demo link [Try It]('https://jinshin19.github.io/josh-tube/')
+- This is the demo link [Try It](https://jinshin19.github.io/josh-tube/)
 
 # Responsiveness:
  - Nest Hub Max 1280 x 800.
